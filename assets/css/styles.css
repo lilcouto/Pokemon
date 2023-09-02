@@ -5,7 +5,27 @@ body {
 }
 
 /* Estilos para o cabeçalho */
+#divBusca{
+    background-color:black;
+    border:solid 1px;
+    border: radius 5px;;
+    width:300px;
+  }
+  
+  #txtBusca{
+    float:left;
+    background-color: transparent;
+    padding-left:5px;
+    font-style:italic;
+    font-size:18px;
+    color: wheat;
+    border-radius: 5px;
+    height: 40px;
+    width:260px;
+  }
 .header-image {
+   
+
     position: relative;
     text-align: center;
 }
@@ -41,7 +61,7 @@ body {
 .sidebar {
     width: 200px;
     height: 1000px;
-    background-color: #000000;
+    background-color: #1F1F1F;
     color: white;
     padding: 20px;
 }

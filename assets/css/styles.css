@@ -1,10 +1,59 @@
 body {
-    margin: 0;
-    padding: 0;
     font-family: Arial, sans-serif;
 }
 
 /* Estilos para o cabeçalho */
+.cabecalho { 
+    background-image: url(../images/Cabeçalho.png);
+    height: 415px;
+    position: relative;
+}
+
+#divBusca{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.logo {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.menu {
+    position: absolute; /* Define o posicionamento absoluto para o menu */
+    bottom: 0; /* Alinha o menu na parte inferior */
+    left: 0; /* Alinha o menu à esquerda */
+    width: 100%; /* Faz o menu ocupar toda a largura do contêiner pai */
+    background-color: rgba(200, 200, 200, 0.6); /* Cor de fundo do menu com transparência */
+    padding: 10px; /* Espaçamento dentro do menu */
+    z-index: 2; /* para o menu ficar  acima da imagem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin: 0 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
 #divBusca{
     background-color:black;
     border:solid 1px;
@@ -23,39 +72,6 @@ body {
     height: 40px;
     width:260px;
   }
-.header-image {
-   
-
-    position: relative;
-    text-align: center;
-}
-.logo {
-    position: absolute;
-    top: 50%;
-    left: 25%;
-    transform: translate(-50%, -50%);
-}
-
-/* Estilos para a barra de menu */
-.menu {
-    background-color: #FFFFFF5E;
-    height: 30px;
-}
-.menu ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-}
-.menu li {
-    margin: 0 20px;
-}
-.menu a {
-    text-decoration: none;
-    color: black;
-}
 
 /* Estilos para a barra lateral */
 .sidebar {

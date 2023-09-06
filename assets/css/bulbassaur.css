@@ -101,18 +101,18 @@ padding:10px;
 
 
 .bulba1 {
-    width: 100px;
-    height: 100px;
+    width: 125px;
+    height: 125px;
 }
 
 .bulba2 {
-    width: 100px;
-    height: 100px;
+    width: 125px;
+    height: 125px;
 }
 
 .bulba3 {
-    width: 100px;
-    height: 100px;
+    width: 125px;
+    height: 125px;
 }
 
 
@@ -121,7 +121,7 @@ padding:10px;
 .bulbas {
     display: inline-block;
     margin-right: 20px;
-    background-color: #eee;
+    background-color: #777373;
 border-radius: 50%;
 box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
 margin: 40px;

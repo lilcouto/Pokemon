@@ -1,0 +1,16 @@
+.card_clicavel {
+    width: 168px;
+    height: 168px;
+}
+.tipos__por-linha {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.card_inseto {
+    width: 168px;
+    height: 168px;
+    border-radius: 10px;
+    background-color: #91C22E;
+}

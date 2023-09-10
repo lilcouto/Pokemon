@@ -1,47 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pokémon Home</title>
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/styles.css" />
-    <!-- Inclua seu arquivo de estilos aqui -->
-  </head>
 
-  <body>
-    <header>
-      <section class="cabecalho">
-        <div id="divBusca">
-            <input type="text" id="txtBusca" placeholder="Buscar..." />
-            <img
-              src="./assets/images/pokebusca.png"
-              id="btnBusca"
-              alt="Buscar"
-              width="25"
-              height="40"/>      
-        </div>
-        <img class="logo"
-            src="./assets/images/LogoPokemon.png"
-            alt="Logo Pokemon"
-            class="logo"
-        />
-        <nav class="menu">
-            <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="noticias.html">Notícias</a></li>
-            <li><a href="geracao.html">Gerações</a></li>
-            <li><a href="tipos.html">Tipos</a></li>
-            <li><a href="ajudeNos.html">Ajude-nos</a></li>
-            </ul>
-        </nav>
-      </section>
-    </header>
-    <div class="sidebar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokémon Home</title>
+  <link rel="stylesheet" href="./assets/css/reset.css" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <link rel="stylesheet" href="./assets/css/tipos.css">
+  <link rel="stylesheet" href="./assets/css/geracao.css">
+
+</head>
+
+<body>
+
+  <header>
+    <section class="cabecalho">
+      <div id="divBusca">
+        <input type="text" id="txtBusca" placeholder="Buscar..." />
+        <img src="./assets/images/pokebusca.png" id="btnBusca" alt="Buscar" width="25" height="40" />
+      </div>
+      <img class="logo" src="./assets/images/LogoPokemon.png" alt="Logo Pokemon" class="logo" />
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="noticias.html">Notícias</a></li>
+          <li><a href="geracao.html">Gerações</a></li>
+          <li><a href="tipos.html">Tipos</a></li>
+          <li><a href="ajudeNos.html">Ajude-nos</a></li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+  <div class="fazeraside">
+    <aside class="sidebar">
       <ul class="pastas">
         <li><a href="index.html">Home</a></li>
         <li><a href="noticias.html">Notícias</a></li>
-        <li><a href="#">Gerações</a></li>
+        <li><a href="geracao.html">Gerações</a></li>
         <ul class="subpastas">
           <li><a href="#">Kanto - 1ª Geração</a></li>
           <li><a href="#">Johto - 2ª Geração</a></li>
@@ -53,41 +49,54 @@
           <li><a href="#">Galar - 8ª Geração</a></li>
           <li><a href="#">Paldea - 9ª Geração</a></li>
         </ul>
-        <li><a href="tipos.html">Tipos</a></li>
+        <li><a href="#">Tipos</a></li>
         <li><a href="ajudeNos.html">Ajude-nos</a></li>
       </ul>
-    </div>
+    </aside>
 
-    <div class="carrossel">
-      <h2>Pokedex</h2>
-      <!-- Carrossel de imagens aqui -->
-    </div>
-
-    <div class="Carrossel">
+    <main>
       <div class="carrossel">
-        <img src="./assets/images/Carrossel.png" alt="Pokedex" />
-      </div>
-    </div>
 
-    <div class="noticias">
-      <div class="noticia">
-        <img src="./assets/images/Noticia01.png" alt="Notícia 1" />
+        <!-- Carrossel de imagens aqui -->
       </div>
-      <div class="noticia">
-        <img src="./assets/images/Noticia02.png" alt="Notícia 2" />
-      </div>
-    </div>
 
+      <div class="Carrossel">
+        <div class="carrossel">
+          <img src="./assets/images/Carrossel.png" alt="Pokedex" />
+        </div>
+      </div>
+      <h2 class="fonte">Notícias</h2>
+      <div class="noticias">
+        <div class="noticia">
+          <img src="./assets/images/Noticia01.png" alt="Notícia 1" />
+        </div>
+        <div class="noticia">
+          <img src="./assets/images/Noticia02.png" alt="Notícia 2" />
+        </div>
+      </div>
+  </div>
+
+  <div class="footer">
     <footer class="rodape">
       <div>
-        <img
-          src="./assets/images/LogoPokebola.png"
-          alt="Logo Pokebola"
-          class="logo-pokebola"
-        />
-        <p>Alan, Kethelyn, Patrícia, Luiz Henrique e Gerdeson</p> <br>
+        <img src="./assets/images/LogoPokebola.png" alt="Logo Pokebola" class="logo-pokebola" />
+        <p>
+          <span class="nome">Alan</span>
+          <span class="nome">Kethelyn</span>
+          <span class="nome">Luiz Henrique</span>
+          <span class="nome">Gerdeson</span>
+          <span class="nome nome-centralizado">Patrícia</span>
+        </p>
+        <br />
         <p>© 2023 Team Pokémon - Coderhouse</p>
-      </div>
+      </div><br>
     </footer>
-  </body>
+  </div>
+  
+  
+  
+  
+  </main>
+</body>
+
 </html>

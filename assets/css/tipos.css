@@ -1,14 +1,15 @@
+#fazeraside {
+    display: flex;
+    flex-wrap: wrap;}
 .card_clicavel {
     width: 100px;
     height: 100px;
     display: flex;
     justify-content: center;
 }
-.tipos__por-linha {
+.tipos__por-linha{
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap
 }
 .card_titulo {
     text-align: center;

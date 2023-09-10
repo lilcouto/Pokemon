@@ -1,6 +1,24 @@
 body {
     font-family: Arial, sans-serif;
 }
+/* Estilos para os nomes no rodapé */
+/* Estilos para os nomes no rodapé */
+/* Estilos para os nomes no rodapé */
+.nome {
+    text-decoration: underline; /* Sublinhado */
+    color: #fff; /* Cor do texto (branco) */
+    margin-left: 70px; /* Espaçamento à direita de cada nome */
+    margin-right: 54px;
+    padding-bottom: 5px; /* Espaçamento entre o nome e a linha inferior (sublinhado) */
+    vertical-align: top; /* Alinhar na parte superior verticalmente */
+  }
+  
+  /* Estilos para centralizar o nome "Patrícia" verticalmente */
+  .nome-centralizado {
+    text-align: center; /* Centralizar o texto horizontalmente */
+    color: #fff; /* Cor do texto (branco) */
+    vertical-align: bottom; /* Alinhar na parte inferior verticalmente */
+  }
 
 /* Estilos para o cabeçalho */
 .cabecalho { 
@@ -76,12 +94,60 @@ body {
 /* Estilos para a barra lateral */
 .sidebar {
     width: 200px;
-    height: 1000px;
+    height: 100;
     background-color: #1F1F1F;
     color: white;
     padding: 20px;
+    
 }
-
+.video {
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100;
+}
+/* Estilo padrão para os links */
+/* Estilos para adicionar espaçamento entre os links */
+/* Estilos para adicionar bolinhas apenas nas listas principais */
+.pastas > li {
+    list-style-type: disc; /* Usar uma bolinha como marcador */
+  }
+  
+  /* Estilos para adicionar espaçamento entre os links */
+  .pastas li {
+    margin-bottom: 10px; /* Espaçamento inferior entre os itens da lista */
+  }
+  
+  /* Estilos para adicionar espaçamento entre os sublinks */
+  .subpastas li {
+    margin-bottom: 5px; /* Espaçamento inferior entre os itens da sublista */
+  }
+  
+.pastas a {
+    text-decoration: none;
+    color: #E3E3E3; /* Cor padrão dos links (branco) */
+  }
+  
+  /* Estilo quando o link é hover (passando o mouse) */
+  .pastas a:hover {
+    color: #E3E3E3; /* Cor dos links no hover (branco) */
+    background-color: #555; /* Cor de fundo no hover */
+  }
+  
+  /* Estilo para links visitados */
+  .pastas a:visited {
+    color: #E3E3E3; /* Cor dos links visitados (branco) */
+  }
+  
+  /* Estilo para links ativos (quando estão sendo clicados) */
+  .pastas a:active {
+    color: #E3E3E3; /* Cor dos links ativos (branco) */
+  }
+  
+.fonte{
+    font-weight: bolder;
+    font-size: xx-large;
+}
 /* Estilos para o carrossel */
 .carrossel {
     text-align: center;
@@ -91,6 +157,7 @@ body {
 /* Estilos para as notícias */
 .noticias {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
     margin-top: 20px;
 }

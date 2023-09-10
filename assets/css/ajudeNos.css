@@ -1,3 +1,27 @@
-.cabecalho { 
+.cabecalho {
     background-image: url(../images/Cabeçalho.png);
+}
+
+.ajudetexto {
+    font-weight: bolder;
+    font-size: 40px;
+    font-family: inter;
+
+}
+
+.doaçao {
+    text-align: center;
+    background-repeat: no-repeat;
+   
+    justify-content: flex-end;
+    /* Alinha o texto na parte inferior do elemento */
+    background-image: url("../images/backgroundajudenos.jpg");
+    /* Substitua pelo caminho da sua imagem */
+    background-size: 1280px;
+    padding: 210px;
+    font-family: tapestry;
+    font-size: 120px;
+    color: #6E8000;
+    -webkit-text-stroke: 3px black;
+    text-stroke: 3px black;
 }

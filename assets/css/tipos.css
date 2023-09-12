@@ -1,15 +1,25 @@
 #fazeraside {
     display: flex;
-    flex-wrap: wrap;}
+    flex-wrap: wrap;
+}
+h2 {
+    font-weight: bolder;
+}
 .card_clicavel {
     width: 100px;
     height: 100px;
     display: flex;
     justify-content: center;
 }
-.tipos__por-linha{
+.tipos__por-linha {
     display: flex;
-    flex-wrap: wrap
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+.card_imagem {
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
 .card_titulo {
     text-align: center;
@@ -17,110 +27,110 @@
     position: relative;
 }
 .card_inseto {
-    width: 168px;
-    height: 168px;
+    width: 120px;
+    height: 120px;
     border-radius: 10px;
     background-color: #91C22E;
 }
 .card_planta {
-    width: 168px;
-    height: 168px;
+    width: 120px;
+    height: 120px;
     border-radius: 10px;
     background-color: #61BB59;
 }
 .card_fada {
-    width: 168px;
-    height: 168px;
+    width: 120px;
+    height: 120px;
     border-radius: 10px;
     background-color: #EF8FE7;
 }
 .card_normal {
-    width: 168px;
-    height: 168px;
+    width: 120px;
+    height: 120px;
     border-radius: 10px;
     background-color: #9199A1;
 }
 .card_dragao {
-    width: 168px;
-    height: 168px;
+    width: 120px;
+    height: 120px;
     border-radius: 10px;
     background-color: #0A6DC8;
 }
 .card_psiquico {
-    width: 168px;
-    height: 168px;
+    width: 120px;
+    height: 120px;
     border-radius: 10px;
     background-color: #FB7075;
 }
 .card_fantasma {
-    width: 168px;
-    height: 168px;
+    width: 120px;
+    height: 120px;
     border-radius: 10px;
     background-color: #5568AA;
 }
 .card_terrestre {
-    width: 168px;
-    height: 168px;
+    width: 120px;
+    height: 120px;
     border-radius: 10px;
     background-color: #DB7645;
 }
 .card_metal {
-    width: 168px;
-    height: 168px;
+    width: 120px;
+    height: 120px;
     border-radius: 10px;
     background-color: #598FA2;
 }
 .card_fogo {
-    width: 168px;
-    height: 168px;
+    width: 120px;
+    height: 120px;
     border-radius: 10px;
     background-color: #FF9D55;
 }
 .card_voador {
-    width: 168px;
-    height: 168px;
+    width: 120px;
+    height: 120px;
     border-radius: 10px;
     background-color: #8EA9DF;
 }
 .card_gelo {
-    width: 168px;
-    height: 168px;
+    width: 120px;
+    height: 120px;
     border-radius: 10px;
     background-color: #71CFBE;
 }
 .card_eletrico {
-    width: 168px;
-    height: 168px;
+    width: 120px;
+    height: 120px;
     border-radius: 10px;
     background-color: #F3D33C;
 }
 .card_pedra {
-    width: 168px;
-    height: 168px;
+    width: 120px;
+    height: 120px;
     border-radius: 10px;
     background-color: #C7B78A;
 }
 .card_noturno {
-    width: 168px;
-    height: 168px;
+    width: 120px;
+    height: 120px;
     border-radius: 10px;
     background-color: #595265;
 }
 .card_agua {
-    width: 168px;
-    height: 168px;
+    width: 120px;
+    height: 120px;
     border-radius: 10px;
     background-color: #4D91D7;
 }
 .card_lutador {
-    width: 168px;
-    height: 168px;
+    width: 120px;
+    height: 120px;
     border-radius: 10px;
     background-color: #CF4069;
 }
 .card_venenoso {
-    width: 168px;
-    height: 168px;
+    width: 120px;
+    height: 120px;
     border-radius: 10px;
     background-color: #AA6AC7;
 }

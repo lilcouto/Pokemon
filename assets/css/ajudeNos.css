@@ -12,7 +12,7 @@
 .doaçao {
     text-align: center;
     background-repeat: no-repeat;
-   display: flex;
+    display: flex;
     justify-content: center;
     align-items: flex-end;
     background-image: url("../images/backgroundajudenos.jpg");
@@ -22,5 +22,4 @@
     font-size: 120px;
     color: #6E8000;
     -webkit-text-stroke: 3px black;
-    text-stroke: 3px black;
 }

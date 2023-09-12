@@ -12,13 +12,12 @@
 .doaçao {
     text-align: center;
     background-repeat: no-repeat;
-   
-    justify-content: flex-end;
-    /* Alinha o texto na parte inferior do elemento */
+   display: flex;
+    justify-content: center;
+    align-items: flex-end;
     background-image: url("../images/backgroundajudenos.jpg");
-    /* Substitua pelo caminho da sua imagem */
     background-size: 1280px;
-    padding: 210px;
+    height: 500px;
     font-family: tapestry;
     font-size: 120px;
     color: #6E8000;

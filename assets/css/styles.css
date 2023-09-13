@@ -23,7 +23,10 @@ body {
 /* Estilos para o cabeçalho */
 .cabecalho { 
     background-image: url(../images/Cabeçalho.png);
-    height: 415px;
+   width: 100%;
+   display: flex;
+   background-repeat: repeat-x;
+    height: 400px;
     position: relative;
 }
 
@@ -93,14 +96,27 @@ body {
 
 /* Estilos para a barra lateral */
 .sidebar {
-    width: 200px;
+    width: 300px;
     height: 100;
     background-color: #1F1F1F;
     color: white;
-    padding: 20px;
+    padding: 35px;
     
 }
-
+.sidebar2 {
+  width: 20%;
+    height: 100;
+    background-color: #1F1F1F;
+    color: white;
+    padding: 35px;
+}
+.fotonoticia {
+  width: 1000px;
+  display: flexbox;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+}
 
 
 .video {

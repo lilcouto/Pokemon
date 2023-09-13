@@ -6,4 +6,100 @@
 .fontelegenda {
     font-family: 'lao muang don';
     font-size: 24px;
+    margin-left: 2%;
+}
+.containernoticia {
+    text-align: center;
+    margin-top: 15px;
+}
+.frame {
+    text-align: center;
+    
+
+}
+.video {
+    margin: 0 auto;
+    display: block;
+}
+.legendaframe {
+    font-weight: bolder;
+    font-size: 20px;
+    margin-right: 350px;
+}
+.noticia1 {
+    border-radius: 20px;
+    width: 1000px;
+    margin-left: 5px;
+    
+}
+.noticia2 {
+    border-radius: 20px;
+    width: 500px;
+    margin-left: 10px;
+}
+.noticia3 {
+    border-radius: 20px;
+    margin-left: 15px;
+    
+    width: 350px;
+}
+.noticia4 {
+    border-radius: 20px;
+    width: 380px;
+    margin-right: 90px;
+    height: 200px;
+    
+margin-left: 50px;
+}
+.noticia5 {
+    border-radius: 20px;
+    width: 350px;
+height: 200px;
+margin-right: 5px;
+}
+.noticiaspoke {
+    display: inline-block;
+}
+/* CSS para alinhar as imagens lado a lado */
+.noticias10 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .noticia {
+    flex: 1;
+    margin: 10px; /* Espaçamento entre as imagens */
+  }
+  
+  /* Estilos adicionais para as imagens e texto se necessário */
+  .legendafoto1 {
+    font-weight: bolder;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  .detalhestorneio {
+    font-family: 'Lao muang dom';
+    text-align: left;
+font-weight: bold;
+margin-left: 10px;
+  }
+  .legenda11 {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 50px;
+  }
+  .legenda12 {
+    text-align: left;
+    font-weight: bold;
+    font-family: 'lao muang dom';
+    margin-left: 50px;
+  }
+.legenda3 {
+    font-weight: bolder;
+    font-size: 20px;
+}
+.legenda4 {
+    font-weight: 550;
+    font-family: 'lao muang dom';
 }

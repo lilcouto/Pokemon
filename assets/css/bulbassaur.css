@@ -71,6 +71,8 @@ height: 15px;
 
 .tituloo {
     margin-left: 60px;
+    
+    
 }
 
 .tipos {
@@ -179,23 +181,31 @@ padding:40px;
 
 .fazeraside {
     display: flex;
-    flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha quando não há espaço suficiente */
+    flex-wrap: wrap; 
 }
 
 
 main {
-    flex: 2; /* Deixa o main ocupar mais espaço */
+    flex: 2; 
 }
 
 aside {
-    flex: 1; /* Deixa o aside ocupar menos espaço */
-    max-width: 200px; /* Define uma largura máxima para o aside */
+    flex: 1; 
+    max-width: 200px; 
 }
 
 .footer {
     clear: both;
     width: 100%;
 }
+
+.titulopokemon {
+margin-top: 20px;
+margin-left: 20px;
+font-weight: bolder;
+
+}
+
 
 
 

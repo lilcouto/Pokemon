@@ -12,7 +12,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    justify-content: flex-start; /* Alinhe os Pokémon à esquerda */
+    justify-content: flex-start;
     margin-left: 100px;
      
 }
@@ -68,7 +68,7 @@ aside {
     max-width: 200px; /* Define uma largura máxima para o aside */
 }
 
-.footer {
+.rodape {
     clear: both;
 }
 

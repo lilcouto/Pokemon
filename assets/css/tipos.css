@@ -23,6 +23,7 @@ h1 {
     height: 100px;
     display: flex;
     justify-content: center;
+
 }
 .tipos__por-linha {
     display: flex;

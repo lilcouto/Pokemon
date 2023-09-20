@@ -74,6 +74,10 @@ body {
     color: black;
     font-weight: bold;
 }
+.menu a:hover {
+  color: purple;
+  font-weight: bold;
+}
 
 #divBusca{
     background-color:black;

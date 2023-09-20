@@ -2,8 +2,21 @@
     display: flex;
     flex-wrap: wrap;
 }
-h2 {
+h1 {
     font-weight: bolder;
+}
+.container {
+    display: grid;
+    width: 800px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "bug grass fairy normal dragon"
+    "psychic ghost ground steel fire"
+    "flying ice electric rock dark"
+    " . water fighting poison . ";
+    gap: 20px 20px;
+    justify-items: center;
+    margin:20px;
 }
 .card_clicavel {
     width: 100px;
@@ -28,108 +41,126 @@ h2 {
     position: relative;
 }
 .card_inseto {
+    grid-area: bug;
     width: 120px;
     height: 120px;
     border-radius: 10px;
     background-color: #91C22E;
 }
 .card_planta {
+    grid-area: grass;
     width: 120px;
     height: 120px;
     border-radius: 10px;
     background-color: #61BB59;
 }
 .card_fada {
+    grid-area: fairy;
     width: 120px;
     height: 120px;
     border-radius: 10px;
     background-color: #EF8FE7;
 }
 .card_normal {
+    grid-area: normal;
     width: 120px;
     height: 120px;
     border-radius: 10px;
     background-color: #9199A1;
 }
 .card_dragao {
+    grid-area: dragon;
     width: 120px;
     height: 120px;
     border-radius: 10px;
     background-color: #0A6DC8;
 }
 .card_psiquico {
+    grid-area: psychic;
     width: 120px;
     height: 120px;
     border-radius: 10px;
     background-color: #FB7075;
 }
 .card_fantasma {
+    grid-area: ghost;
     width: 120px;
     height: 120px;
     border-radius: 10px;
     background-color: #5568AA;
 }
 .card_terrestre {
+    grid-area: ground;
     width: 120px;
     height: 120px;
     border-radius: 10px;
     background-color: #DB7645;
 }
 .card_metal {
+    grid-area: steel;
     width: 120px;
     height: 120px;
     border-radius: 10px;
     background-color: #598FA2;
 }
 .card_fogo {
+    grid-area: fire;
     width: 120px;
     height: 120px;
     border-radius: 10px;
     background-color: #FF9D55;
 }
 .card_voador {
+    grid-area: flying;
     width: 120px;
     height: 120px;
     border-radius: 10px;
     background-color: #8EA9DF;
 }
 .card_gelo {
+    grid-area: ice;
     width: 120px;
     height: 120px;
     border-radius: 10px;
     background-color: #71CFBE;
 }
 .card_eletrico {
+    grid-area: electric;
     width: 120px;
     height: 120px;
     border-radius: 10px;
     background-color: #F3D33C;
 }
 .card_pedra {
+    grid-area: rock;
     width: 120px;
     height: 120px;
     border-radius: 10px;
     background-color: #C7B78A;
 }
 .card_noturno {
+    grid-area: dark;
     width: 120px;
     height: 120px;
     border-radius: 10px;
     background-color: #595265;
 }
 .card_agua {
+    grid-area: water;
     width: 120px;
     height: 120px;
     border-radius: 10px;
     background-color: #4D91D7;
 }
 .card_lutador {
+    grid-area: fighting;
     width: 120px;
     height: 120px;
     border-radius: 10px;
     background-color: #CF4069;
 }
 .card_venenoso {
+    grid-area: poison;
     width: 120px;
     height: 120px;
     border-radius: 10px;

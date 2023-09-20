@@ -9,6 +9,13 @@
 
 }
 
+.titulo {
+    margin-right:0%;
+    text-align: center;
+    align-items: flex-end;
+    display: flex;
+}
+
 .doaçao {
     text-align: center;
     background-repeat: no-repeat;

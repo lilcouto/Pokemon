@@ -49,7 +49,8 @@ body {
     left: 0; /* Alinha o menu à esquerda */
     width: 100%; /* Faz o menu ocupar toda a largura do contêiner pai */
     background-color: rgba(200, 200, 200, 0.6); /* Cor de fundo do menu com transparência */
-    padding: 10px; /* Espaçamento dentro do menu */
+    padding-top: 10px;
+    padding-bottom: 10px; /* Espaçamento dentro do menu */
     z-index: 2; /* para o menu ficar  acima da imagem */
     display: flex;
     justify-content: center;

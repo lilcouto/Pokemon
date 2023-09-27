@@ -4,6 +4,8 @@
 }
 h1 {
     font-weight: bolder;
+    padding-top: 10px;
+    padding-left: 10px;
 }
 .container {
     display: grid;
@@ -17,7 +19,9 @@ h1 {
     gap: 20px 20px;
     justify-items: center;
     margin:20px;
+    position: relative;
 }
+
 .card_clicavel {
     width: 100px;
     height: 100px;
@@ -25,12 +29,14 @@ h1 {
     justify-content: center;
 
 }
+/*
 .tipos__por-linha {
     display: flex;
     flex-wrap: nowrap;
     gap: 20px;
     justify-content: center;
 }
+*/
 .card_imagem {
     display: flex;
     justify-content: center;
@@ -39,6 +45,8 @@ h1 {
 .card_titulo {
     text-align: center;
     font-size: 14px;
+    font-weight: bold;
+    color:white;
     position: relative;
 }
 .card_inseto {

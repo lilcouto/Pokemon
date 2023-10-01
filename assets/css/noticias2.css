@@ -64,12 +64,12 @@ margin-right: 5px;
 .noticias10 {
     display: flex;
     flex-wrap: wrap;
-  }
+}
   
   .noticia {
     flex: 1;
     margin: 10px; /* Espaçamento entre as imagens */
-  }
+}
   
   /* Estilos adicionais para as imagens e texto se necessário */
   .legendafoto1 {
@@ -102,4 +102,7 @@ margin-left: 10px;
 .legenda4 {
     font-weight: 550;
     font-family: 'lao muang dom';
+}
+.fotonoticia {
+    border-radius: 20px;
 }

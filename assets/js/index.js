@@ -1,5 +1,7 @@
+
 document.addEventListener('DOMContentLoaded', function () {
-    const carousel = document.getElementById('carouselExampleCaptions');
+  
+  const carousel = document.getElementById('carouselExampleCaptions');
     const items = carousel.querySelectorAll('[data-te-carousel-item]');
     let currentIndex = 0;
   
@@ -31,4 +33,6 @@ document.addEventListener('DOMContentLoaded', function () {
   
     nextButton.addEventListener('click', nextSlide);
     prevButton.addEventListener('click', prevSlide);
-  });
+  });var oi = prompt("Olá! Qual o seu nome?")
+  alert("Seja bem vindo! " + oi)
+  

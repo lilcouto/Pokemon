@@ -2,7 +2,7 @@
 
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    
     
 }
 
@@ -34,15 +34,38 @@ width: 400px;
 
 }
 
-.caracteristica {
-background-color: #B0C4DE;
-border-radius: 10px;
-box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
-padding:150px;
-width: 200px;
-    height: 53px;
+.caracteristicaa {
+    background-color: #B0C4DE;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
     margin: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    width: 30rem;
+   
+}
 
+.caracteristicaa strong {
+    font-weight: bold;
+  }
+
+.informa {
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 20px;
+    
+    
+   
+}
+
+.categoria {
+    margin-left: 110px;
+}
+
+.categoriaa {
+    margin-left: 120px;
 }
 
 .plantaa {
@@ -138,6 +161,7 @@ height: 15px;
 }
 
 
+
 .bulbacarac {
     max-width: 90;
 }
@@ -205,6 +229,42 @@ margin-left: 20px;
 font-weight: bolder;
 
 }
+
+.ladoalado {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .ladoalado2 {
+    width: 36%;
+    box-sizing: border-box;
+  }
+  
+  .grafico {
+    width: 50%;
+    box-sizing: border-box;
+  }
+  
+  .imagem {
+    width: 50%;
+    box-sizing: border-box;
+  }
+  
+  .fraquezas1,
+  .fraquezas2 {
+    width: 100%;
+    box-sizing: border-box;
+    
+  }
+  
+  /* Adicione um estilo específico para a imagem para garantir que ela não seja afetada por outros estilos */
+  .imagem img {
+    width: 100%;
+    height: auto;
+    
+  }
+
+
 
 
 

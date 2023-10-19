@@ -62,10 +62,14 @@
 
                 <div class="caracteristicaa">
                     
-                    <p class="informa"><strong>Altura:</strong> <span class="categoria"><strong>Categoria:</strong></span></p>
-                    <p class="informa">0.7 m <span class="categoriaa">Planta</span></p>
-                    <p class="informa"><strong> Peso:</strong> <span class="categoria"><strong>Habilidade:</strong></span></p>
-                    <p class="informa">6.9 kg <span class="categoriaa"> Overgrow</span></p>
+                    <p class="altura"><strong>Altura</strong> 
+                        <span class="categoria"><strong>Categoria:</strong></span></p>
+                    <p class="valorAltura"></p> 
+                        <span class="categoriaa">Planta</span></p>
+                    <p class="informa"><strong> Peso:</strong> 
+                        <span class="categoria"><strong>Habilidade:</strong></span></p>
+                    <p class="informa">6.9 kg 
+                        <span class="categoriaa"> Overgrow</span></p>
                     <p class="informa"><strong>Gênero:</strong></p>
                 </div>
                 </div>
@@ -143,7 +147,33 @@
                 </div><br>
             </footer>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> 
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                async function getPokemon(pokemonName) { // CRIAÇÃO DA FUNÇÃO
+                    const API_URL = `https://pokeapi.co/api/v2/pokemon/${pokemonName}`; // DECLARAÇÃO DA URL DA API
+                    try {
+                        const resposta = await axios.get(API_URL); // FAZ A REQUISIÇÃO PARA A URL APONTADA
+                        return resposta.data; // PEGA A RESPOSTA
+                    } catch (error) {
+                        throw error; // PRINTA O ERROR
+                    }
+                }
+    
+                getPokemon("bulbasaur").then((pokemon) => {
+                    const alturaElement = document.querySelector(".valorAltura");
+            
+                    if (alturaElement) {
+                        pokemon.height = pokemon.height / 10 // conversão de m para centímetros
+                        alturaElement.innerText = `${pokemon.height} m`;
+                    } else {
+                        console.error("Elemento com a classe 'valorAltura' não encontrado.");
+                    }
+                });
+            });
 
+            
+        </script>
 </body>
 
 </html>

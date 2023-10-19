@@ -51,7 +51,28 @@ width: 400px;
     font-weight: bold;
   }
 
-.informa {
+.altura{
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 20px;
+    
+    
+   
+}.valorAltura {
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 20px;
+    
+    
+   
+}.informa {
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 20px;
+    
+    
+   
+}.informa {
     display: flex;
     margin-bottom: 10px;
     font-size: 20px;
@@ -59,6 +80,7 @@ width: 400px;
     
    
 }
+    
 
 .categoria {
     margin-left: 110px;

@@ -1,12 +1,13 @@
 .container_noticias {
     display: grid;
     max-width: 800px;
+    height: auto;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: "noticia1 noticia1 noticia2"
     "noticia3 noticia4 noticia5";
     gap: 20px;
-    padding: 20px;
+    padding: 28px;
 }
 
 .noticia1 {

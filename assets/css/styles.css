@@ -80,6 +80,11 @@ body {
   font-weight: bold;
 }
 
+.selecionado a {
+  color: purple;
+  font-weight: bolder;
+  }
+
 #divBusca{
     background-color:black;
     border:solid 1px;

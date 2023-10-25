@@ -6,25 +6,26 @@ const createCardComponent = () => {
     const imgbox = document.createElement("div");
     imgbox.classList.add("imgbox");
     pokemonlinha.appendChild(imgbox);
-    if (pokemon.types.type.name == "grass") {
+    /*if (pokemon.types.type.name == "grass") {
         fetch('https://pokeapi.co/api/v2/pokemon' + PokemonName)
             .then(response => response.json())
             .then(response => {
             createPokemonImage(response.sprites.front_default);
         });
-    }
+    }*/
     const info = document.createElement("div");
     pokemonlinha.appendChild(info);
     const numero = document.createElement("p");
     numero.classList.add("numero");
-    if (pokemon.types.type.name == "grass") {
-        numero.innerText = "#" + pokemon.order};
+    /*if (pokemon.types.type.name == "grass") {
+        numero.innerText = "#" + pokemon.order};*/
     info.appendChild(nome);
     info.appendChild(numero);
     const nome = document.createElement("p");
     nome.classList.add("nome");
+    /*
     if (pokemon.types.type.name == "grass") {
-        nome.innerText = pokemon.name};
+        nome.innerText = pokemon.name};*/
     info.appendChild(nome);
 
     return pokemonlinha;
@@ -41,11 +42,18 @@ function createPokemonImage(url) {
 fetch('https://pokeapi.co/api/v2/pokemon/?limit=70')
     .then(response => response.json())
     .then(response => {
-        response.results.name.forEach((nome) => {
-            console.log(createCardComponent(response.pokemon[0].pokemon.name))
-        })});
+        response.results.forEach((name) => {
+            let i = 0;
+            for (i = 0; i < 70; i++){
+                if (pokemon.types.type.name == "grass") {
+                    nome.innerText = pokemon.name};
+            }
+            return name;})
+            console.log(createCardComponent(pokemonlinha))
+        });
         
 
 /*fetch('https://pokeapi.co/api/v2/pokemon/?limit=70')
     .then(response => response.json())
-    .then(response => console.log(createCardComponent()));*/
+    .then(response => console.log(createCardComponent()));
+    console.log(createCardComponent(response.pokemon[0].pokemon.name))*/

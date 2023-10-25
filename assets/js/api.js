@@ -1,7 +1,7 @@
 function listarIDPokemon (pokemonID) {
     const pokemon = document.createElement("p");
     pokemon.innerText = pokemonID;
-    const idPokemon = document.getElementById("id");
+    const idPokemon = document.getElementById("idPokemon");
     idPokemon.append(pokemon);
 }
 
@@ -21,20 +21,20 @@ function listarPesoPokemon (pokemonPeso) {
     peso.append(pokemon);
 }
 
-fetch("https:pokeapi.co/api/v2/pokemon/4")
+fetch("https://pokeapi.co/api/v2/pokemon/4")
     .then((response) => response.json())
     .then((response) => listarPesoPokemon(response.weight))
     // .then((response) => listarPokemon(response['sprites']['front_defautl']));
     // .then((response) => console.log(response))
 
-fetch("https:pokeapi.co/api/v2/pokemon/4")
+fetch("https://pokeapi.co/api/v2/pokemon/4")
     .then((response) => response.json())
     .then((response) => listarTipoPokemon(response['types']['0']['type'].name))
 
-fetch("https:pokeapi.co/api/v2/pokemon/4")
+fetch("https://pokeapi.co/api/v2/pokemon/4")
     .then((response) => response.json())
     .then((response) => listarIDPokemon(response.id))
 
-fetch("https:pokeapi.co/api/v2/pokemon/4")
+fetch("https://pokeapi.co/api/v2/pokemon/4")
     .then((response) => response.json())
     .then((response) => console.log(response));

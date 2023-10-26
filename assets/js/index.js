@@ -1,4 +1,4 @@
-import axios from 'axios'
+/import axios from 'axios'/
 document.addEventListener("DOMContentLoaded", function () {
   const carousel = document.getElementById("carouselExampleCaptions");
   const items = carousel.querySelectorAll("[data-te-carousel-item]");

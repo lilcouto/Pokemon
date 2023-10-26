@@ -1,0 +1,192 @@
+.doaçao {
+    text-align: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url("../images/backgroundajudenos.jpg");
+    height: 500px;
+    font-family: tapestry;
+    font-size: 120px;
+    color: #6E8000;
+    -webkit-text-stroke: 3px black;
+}
+
+.ajudetexto {
+    display: block;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: -0.5px;  
+}
+
+/* Telas de Celular */
+@media screen and (max-width: 480px) {
+    .cabecalho {
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .menu, .sidebar, #divBusca{
+        display: none;       
+    }
+
+    .logo {
+        width: 300px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .doaçao {
+        height: 300px;
+        background-size: cover;
+    }
+
+    .ajudetexto {
+        margin: 30px;
+    }
+
+    .ajudetexto, p {
+        font-size: 18px;
+        line-height: 28px;        
+    }
+}
+
+/* Dispositivos com telas muito pequenas */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    .cabecalho {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .sidebar, #divBusca{
+        display: none;       
+    }
+
+    .logo {
+        width: 300px;
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+    }
+
+    .doaçao {
+        height: 300px;
+        background-size: cover;
+    }
+
+    .ajudetexto {
+        margin: 30px;
+    }
+
+    .ajudetexto, p {
+        font-size: 18px;
+        line-height: 28px;        
+    }
+}
+
+/*Tablets */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .sidebar{
+        display: none;       
+    }
+
+    .logo {
+        width: 400px;
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .doaçao {
+        height: 450px;
+        background-size: cover;
+    }
+
+    .ajudetexto {
+        margin: 30px;
+    }
+
+    .ajudetexto, p {
+        font-size: 18px;
+        line-height: 28px;        
+    }
+}
+
+/* Tablets maiores e notebooks */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .logo {
+        width: 400px;
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+    }
+
+    .doaçao {
+        height: 450px;
+        background-size: cover;
+    }
+
+    .ajudetexto {
+        margin: 30px;
+    }
+
+    .ajudetexto, p {
+        font-size: 18px;
+        line-height: 28px;        
+    }
+}
+
+/* Desktops */ 
+@media screen and (min-width: 1200px) and (max-width: 1919px){
+    .logo {
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+    }
+
+    .doaçao {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .ajudetexto {
+        margin: 30px;
+    }
+
+    .ajudetexto, p {
+        font-size: 18px;
+        line-height: 28px;        
+    }
+}
+
+/* Telas maiores */ 
+@media screen and (min-width: 1920px){
+    .logo {
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+    }
+
+    .doaçao {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .ajudetexto {
+        margin: 30px;
+    }
+
+    .ajudetexto, p {
+        font-size: 18px;
+        line-height: 28px;        
+    }
+}

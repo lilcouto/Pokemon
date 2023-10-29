@@ -1,0 +1,64 @@
+{
+    "pokemon_informacoes": [
+        {
+            "name": "Bulbasaur",
+            "order": "#001",
+            "sprite": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png" 
+        },
+        {
+            "name": "Ivysaur",
+            "order": "#002",
+            "sprite": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/002.png" 
+        },
+        {
+            "name": "Venusaur",
+            "order": "#003",
+            "sprite": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/003.png" 
+        },
+        {
+            "name": "Oddish",
+            "order": "#043",
+            "sprite": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/043.png" 
+        },
+        {
+            "name": "Gloom",
+            "order": "#044",
+            "sprite": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/044.png" 
+        },
+        {
+            "name": "Vileplume",
+            "order": "#045",
+            "sprite": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/045.png" 
+        },
+        {
+            "name": "Paras",
+            "order": "#046",
+            "sprite": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/046.png" 
+        },
+        {
+            "name": "Parasect",
+            "order": "#047",
+            "sprite": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/047.png" 
+        },
+        {
+            "name": "Bellsprout",
+            "order": "#069",
+            "sprite": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/069.png" 
+        },
+        {
+            "name": "Weepinbell",
+            "order": "#070",
+            "sprite": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/070.png" 
+        },
+        {
+            "name": "Victreebel",
+            "order": "#071",
+            "sprite": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/071.png" 
+        },
+        {
+            "name": "Exeggcute",
+            "order": "#102",
+            "sprite": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/102.png" 
+        }
+    ]
+}

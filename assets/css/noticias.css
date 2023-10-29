@@ -1,73 +1,176 @@
 .container_noticias {
-    display: grid;
-    max-width: 800px;
-    height: auto;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "noticia1 noticia1 noticia2"
-    "noticia3 noticia4 noticia5";
-    gap: 20px;
-    padding: 28px;
+  display: grid;
+  max-width: 800px;
+  height: auto;
+  justify-content: space-between;
+
+  gap: 20px;
+  padding: 28px;
 }
 
 .noticia1 {
-    grid-area: noticia1;
-    display: inline-block;
-    position: relative;
+  grid-area: noticia1;
+  display: inline-block;
+  position: relative;
+
 }
 
 .noticia1 h2 {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    color: rgb(255, 255, 255);
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: rgb(255, 255, 255);
 }
 
 .noticia1 img {
-    border-radius: 20px;
+  border-radius: 20px;
+  
 }
 
 .noticia2 {
-    grid-area: noticia2;
-    display: inline-block;
-    position: relative;
+  grid-area: noticia2;
+  display: inline-block;
+  position: relative;
+  max-width: 100%; /* A imagem não ficará maior que a largura do contêiner pai */
+  height: auto; /* A altura se ajustará automaticamente para manter a proporção original */
+  display: block; /* Remove espaços em branco indesejados sob a imagem */
 }
 
 .noticia2 h2 {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    color: rgb(255, 255, 255);
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: rgb(255, 255, 255);
+
 }
 
 .noticia2 img {
-    border-radius: 20px;
+  border-radius: 20px;
 }
 
 .noticia3 {
-    grid-area: noticia3;
+  grid-area: noticia3;
 }
 
 .noticia3 img {
-    border-radius: 20px;
+  border-radius: 20px;
 }
 
 .noticia4 {
-    grid-area: noticia4;
+  grid-area: noticia4;
 }
 
 .noticia4 img {
-    border-radius: 20px;
+  border-radius: 20px;
 }
 
 .noticia5 {
-    grid-area: noticia5;
+  grid-area: noticia5;
 }
 
 .noticia5 img {
-    border-radius: 20px;
+  border-radius: 20px;
 }
 
 .container_noticias h2 {
-    font-weight: bold;
+  font-weight: bold;
+}
+/* Estilos gerais para dispositivos móveis (Mobile First) */
+body {
+  font-size: 16px;
+}
+
+.container_noticias {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.noticia1,
+.noticia2,
+.noticia3,
+.noticia4,
+.noticia5 {
+  width: 100%;
+}
+
+.noticia1 h2,
+.noticia2 h2,
+.noticia3 h2,
+.noticia4 h2,
+.noticia5 h2 {
+  font-size: 20px; /* Aumentando o tamanho da fonte para dispositivos móveis */
+}
+@media (max-width: 450px) {
+    .menu{
+        display: in;
+        margin-right: 50%;
+        margin-left: 50%;
+    }
+    .n1 {
+        max-width: 50%;
+    }
+}
+/* Media Query para telas maiores (exemplo de breakpoint) */
+@media (min-width: 768px) {
+  body {
+    font-size: 18px; /* Ajuste o tamanho da fonte para telas maiores, se necessário */
+  }
+}
+/* Outros estilos específicos para telas maiores, se necessário */
+
+@media (max-width: 1025px) {
+  .sidebar {
+    display: none;
+  }
+  .container_noticias {
+    display: grid;
+    max-width: 800px;
+    height: auto;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 28px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "noticia1 noticia1 noticia2"
+      "noticia3 noticia4 noticia5";
+  }
+  .procura {
+    display: none
+}
+.procuras {
+    display: none;
+}
+.logo {
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
+}
+.menu{
+    position: absolute;
+    right: 5%;
+    }
+    .n1 {
+        max-width: 90%;
+    }
+}
+@media (min-width: 1026px) {
+  .container_noticias {
+    display: grid;
+    max-width: 800px;
+    height: auto;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 28px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "noticia1 noticia1 noticia2"
+      "noticia3 noticia4 noticia5";
+  }
 }

@@ -11,7 +11,7 @@ h3 {
 .container__explicacao {
     display: grid;
     grid-template-columns: 120px 2fr;
-    grid-template-rows: 50px 100px;
+    grid-template-rows: 1fr 2fr;
     grid-template-areas: "card titulo"
     "card texto";
     gap: 20px;
@@ -34,10 +34,31 @@ h2 {
     margin-top: 10px;
     margin-left: 10px;
     font-weight: bold;
+    display: inline;
+    justify-items: center;
+
 }
 .bloco_de_texto {
     grid-area: texto;
-    display: inline-block;
-    width: 500px;
+    display: block;
+    width: auto;
     margin-left: 10px;
+    position: relative;
+}
+
+#pokemons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: flex-start;
+    margin-left: 40px;
+     
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+    
 }

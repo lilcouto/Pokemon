@@ -1,59 +1,38 @@
-const createCardComponent = () => {
-    const pokemons = document.getElementById("pokemons")
+const createCardComponent = (informacoes) => {
     const pokemonlinha = document.createElement("div");
     pokemonlinha.classList.add("pokemonlinha");
     pokemons.appendChild(pokemonlinha);
     const imgbox = document.createElement("div");
     imgbox.classList.add("imgbox");
     pokemonlinha.appendChild(imgbox);
-    /*if (pokemon.types.type.name == "grass") {
-        fetch('https://pokeapi.co/api/v2/pokemon' + PokemonName)
-            .then(response => response.json())
-            .then(response => {
-            createPokemonImage(response.sprites.front_default);
-        });
-    }*/
+    const img = document.createElement("img");
+    img.src = informacoes.sprite;
+    img.width = 70;
+    img.height = 70;
+    imgbox.appendChild(img);
     const info = document.createElement("div");
     pokemonlinha.appendChild(info);
     const numero = document.createElement("p");
+    numero.innerText = informacoes.order;
     numero.classList.add("numero");
-    /*if (pokemon.types.type.name == "grass") {
-        numero.innerText = "#" + pokemon.order};*/
-    info.appendChild(nome);
     info.appendChild(numero);
     const nome = document.createElement("p");
     nome.classList.add("nome");
-    /*
-    if (pokemon.types.type.name == "grass") {
-        nome.innerText = pokemon.name};*/
-    info.appendChild(nome);
+    nome.innerText = informacoes.name;
+    info.appendChild(nome);    
 
     return pokemonlinha;
 }
 
-function createPokemonImage(url) {
-    const img = document.createElement("img");
-    img.src = url;
-    img.width = 100;
-    document.getElementsByClassName("imgbox").append(img); 
-}
 
+fetch('./api__planta.json')
+    .then((response) => response.json())
+    .then((response) => {
+        const informacoes = response.pokemon_informacoes;
+        console.log(informacoes);
 
-fetch('https://pokeapi.co/api/v2/pokemon/?limit=70')
-    .then(response => response.json())
-    .then(response => {
-        response.results.forEach((name) => {
-            let i = 0;
-            for (i = 0; i < 70; i++){
-                if (pokemon.types.type.name == "grass") {
-                    nome.innerText = pokemon.name};
-            }
-            return name;})
-            console.log(createCardComponent(pokemonlinha))
-        });
-        
-
-/*fetch('https://pokeapi.co/api/v2/pokemon/?limit=70')
-    .then(response => response.json())
-    .then(response => console.log(createCardComponent()));
-    console.log(createCardComponent(response.pokemon[0].pokemon.name))*/
+        informacoes.forEach((pokemon) => {
+            const cardContainer = document.getElementById("pokemons");
+            cardContainer.appendChild(createCardComponent(pokemon));
+        })
+    });

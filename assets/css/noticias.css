@@ -40,7 +40,7 @@
   position: absolute;
   bottom: 20px;
   left: 20px;
-  color: rgb(255, 255, 255);
+  color: white;
 
 }
 
@@ -102,16 +102,7 @@ body {
 .noticia5 h2 {
   font-size: 20px; /* Aumentando o tamanho da fonte para dispositivos móveis */
 }
-@media (max-width: 450px) {
-    .menu{
-        display: in;
-        margin-right: 50%;
-        margin-left: 50%;
-    }
-    .n1 {
-        max-width: 50%;
-    }
-}
+
 /* Media Query para telas maiores (exemplo de breakpoint) */
 @media (min-width: 768px) {
   body {
@@ -145,32 +136,171 @@ body {
 }
 .logo {
     position: absolute;
-  top: 50%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 100%;
   max-height: 100%;
 }
-.menu{
-    position: absolute;
-    right: 5%;
-    }
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+  }
     .n1 {
         max-width: 90%;
+}
+
+}
+
+
+    
+  
+  
+  
+  /* Media query para telas menores (exemplo de breakpoint) */
+  @media (max-width: 460px) {
+    .menu ul {
+      flex-direction: column; /* Altera a direção da lista para uma coluna */
     }
-}
-@media (min-width: 1026px) {
-  .container_noticias {
-    display: grid;
-    max-width: 800px;
-    height: auto;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 28px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-      "noticia1 noticia1 noticia2"
-      "noticia3 noticia4 noticia5";
+  
+    .menu li {
+      padding: 10px;
+      text-align: center; /* Centraliza o texto na coluna */
+    }
+  
+    /* Estilos do menu de hambúrguer */
+    .menu-toggle {
+      display: block;
+    }
+    .noticia1 h2 {
+    color: black;
+        position: static;
+        
+    }
+    #divbusca {
+        display: none;
+    }
+   
+    
+    .container_noticias {
+        grid-template-columns: 1fr; /* Uma única coluna */
+        grid-template-areas:
+          "noticia1"
+          "noticia2"
+          "noticia3"
+          "noticia4"
+          "noticia5";
+      }
+      .noticia1 img,
+  .noticia2 img,
+  .noticia3 img,
+  .noticia4 img,
+  .noticia5 img {
+    max-width: 100%; /* Garanta que as imagens se ajustem à área da notícia */
+    height: auto; /* A altura se ajustará automaticamente para manter a proporção original */
   }
+  .noticia2 h2 {
+    color: black;
+position: static;
 }
+.noticia2 {
+    bottom: 25%;
+}
+  }
+  @media (min-width: 461px) and (max-width: 768px) {
+    /* Estilos para telas nesse intervalo de largura */
+    .n1 {
+        max-width: 55%;
+        margin-left: 0;
+    }
+    .noticia1 h2 {
+        
+        
+        position: absolute;
+        bottom: 50%;
+    }
+    .menu li {
+        padding: 1px;
+        margin-left: 5%;
+    }
+    .container_noticias {
+        grid-template-columns: 1fr; /* Uma única coluna */
+        grid-template-areas:
+          "noticia1"
+          "noticia2"
+          "noticia3"
+          "noticia4"
+          "noticia5";
+      }
+      .noticia1 img,
+  .noticia2 img,
+  .noticia3 img,
+  .noticia4 img,
+  .noticia5 img {
+    max-width: 100%; /* Garanta que as imagens se ajustem à área da notícia */
+    height: auto; /* A altura se ajustará automaticamente para manter a proporção original */
+  }
+  .noticia1 h2 {
+    color: black;
+        position: static;
+        }
+        .noticia2 h2 {
+            color: black;
+        position: static;
+        }
+        .noticia1 {
+            max-height: 50%;
+        }
+        .noticia2 {
+            max-width: 100%;
+        }
+        }
+        @media (min-width: 769px) and (max-width: 1025px) {
+            .container_noticias {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                gap: 20px;
+                padding: 28px;
+                grid-template-areas:
+                  "noticia1 noticia1"
+                  "noticia3 noticia4"
+                  "noticia2 noticia5";
+              }
+              .noticia2 h2 {
+                color: black;
+            position: static;
+            }
+        }
+  @media (min-width: 1026px) {
+    .container_noticias {
+      display: grid;
+      max-width: 800px;
+      height: auto;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 28px;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+        "noticia1 noticia1 noticia2"
+        "noticia3 noticia4 noticia5";
+    }
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+      }
+      
+      .menu li {
+        padding: 10px;
+      }
+      .n1 {
+        max-width: 100%;
+      }
+    }
